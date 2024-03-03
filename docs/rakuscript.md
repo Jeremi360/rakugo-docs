@@ -107,11 +107,16 @@ Gd.friendship = Gd.max_friendship
 
 Character with this char_tag say *String*
 
-When Say is executed, a signal [say] is send with dictionary of data for the character with this char_tag and this String in parameter.
+When Say is executed, a signal [sg_say] is send with dictionary of data for the character with this char_tag and this String in parameter.
 
 If no character with this char_tag is found, signal is send with an empty dictionary.
 
-After Say is executed, Rakugo automatically waiting, it send a [step] signal.
+After Say is executed, Rakugo automatically waiting, it send a [sg_step] signal:
+
+```gdscript
+  if Rakugo.is_waiting_step():
+    Rakugo.do_step()
+```
 
 ### Say Example
 
@@ -125,7 +130,7 @@ Gd "Hello !"
 
 Say *String*
 
-When Say is executed, a signal [say] is send with empty dictionary and this String in parameter.
+When Say is executed, a signal [sg_say] is send with empty dictionary and this String in parameter.
 
 ### Example of say with no character
 
@@ -135,7 +140,7 @@ When Say is executed, a signal [say] is send with empty dictionary and this Stri
 
 ```<[var_name]> or <[char_tag].[var_name]>```
 
-You can use variables in Say, Rakugo replace them by their values in String before send signal [say].
+You can use variables in Say, Rakugo replace them by their values in String before send signal [sg_say].
 
 ### Example of using variables
 
@@ -148,15 +153,8 @@ You can use variables in Say, Rakugo replace them by their values in String befo
 
 ```renpy
 [var_name] = ? [question]
-```
-
-```renpy
 [var_name] = ? [question] [placeholder]
-```
-
-```renpy
 [var_name] = ? [character_tag] [question] [placeholder]
-
 ```
 
 It can be used get user input as string,
@@ -165,7 +163,8 @@ for example you can use it to ask user for a his/her/their name.
 After a Ask is executed, Rakugo waiting call of [ask_return] signal:
 
 ```gdscript
-Rakugo.ask_return(answer)
+if Rakugo.is_waiting_ask_return():
+    Rakugo.ask_return(answer)
 ```
 
 ### Ask Example
@@ -192,10 +191,11 @@ It must start it from menu menu_name:
 `"Choice"` - is choice and `>` is used to jump to other dialog/label or menu.
 Menu block ends with empty line.
 
-After a Menu is executed, Rakugo waiting call of [ask_menu] signal:
+After a Menu is executed, Rakugo waiting call of [menu_return] signal:
 
 ```gdscript
-Rakugo.ask_menu(branch_index)
+if Rakugo.is_waiting_menu_return():
+    Rakugo.menu_return(branch_index)
 ```
 
 ## Jump
@@ -232,8 +232,10 @@ label_name or menu_label_name if condition is true.
 jump emily_date if emily.relationship >= 20
 ```
 
-[say]: rakugo_singleton.md#say-characterdictionary-textstring
-[step]: rakugo_singleton.md#step
+[sg_say]: rakugo_singleton.md#sg_say
+[sg_ask]: rakugo_singleton.md#sg_ask
+[sg_menu]: rakugo_singleton.md#sg_menu
+[sg_step]: rakugo_singleton.md#sg_step
 [ask_return]: rakuscript.md#ask_return
-[ask_menu]: rakuscript.md#ask_menu
+[menu_return]: rakuscript.md#menu_return
 [workaround]:rakugo_variables_workaround.md
