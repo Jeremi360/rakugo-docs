@@ -10,8 +10,8 @@ Extends **Node**
  - [**auto_start**](#auto_start)
 
 ## Funcs
- - [**start_dialogue**()](#start_dialogue)
- - [**start_dialogue_from_label**(label_name : String)](#start_dialogue_from_labellabel_name--string)
+ - [**start_dialogue**](#start_dialogue)
+ - [**start_dialogue_from_label**](#start_dialogue_from_label)
 
 ## Vars
 ### raku_script
@@ -36,6 +36,8 @@ If true calls start_dialogue() when scene is ready
 ### start_dialogue()
 Starts raku_script from start_dialogue_from_label 
 
-### start_dialogue_from_label(label_name : String)
+### start_dialogue_from_label
+*args: label_name : `String`*
+
 Starts raku_script from given label
 
