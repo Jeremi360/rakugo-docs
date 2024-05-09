@@ -394,9 +394,9 @@ Use it when [is_waiting_menu_return] return `true`, to continue script reading p
 [Say]: rakuscript.md#say
 [do_step]: #do_step
 [Ask]: rakuscript.md#ask
-[ask_return]: rakuscript.md#ask_return
+[ask_return]: #ask_return
 [Menu]: rakuscript.md#menu
-[menu_return]: rakuscript.md#menu_return
+[menu_return]: #menu_return
 [parse_script]: #parse_script
 [parse_and_execute_script]: #parse_and_execute_script
 [execute_script]: #execute_script
