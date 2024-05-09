@@ -281,5 +281,5 @@ jump emily_date if emily.relationship >= 20
 [sg_ask]: rakugo_singleton.md#sg_ask
 [sg_menu]: rakugo_singleton.md#sg_menu
 [sg_step]: rakugo_singleton.md#sg_step
-[ask_return]: rakuscript.md#ask_return
-[menu_return]: rakuscript.md#menu_return
+[ask_return]: rakugo_singleton.md#ask_return
+[menu_return]: rakugo_singleton.md#menu_return

@@ -9,4 +9,4 @@ Some time ago Rakugo wasn’t working on itch.io with Firefox for html5 export, 
 
 For any type of export, we need add RakuScript  *`*.rk`* files to export settings as by default, only files not recognized by Godot are ignored.
 
-![](/docs/export-resources.png)
+![](export-resources.png)
