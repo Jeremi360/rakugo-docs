@@ -11,7 +11,7 @@ Extends **Node**
 
 ## Funcs
  - [**start_dialogue**()](#start_dialogue)
- - [**start_dialogue_from_label**(label_name : String)](#start_dialogue_from_label)
+ - [**start_dialogue_from_label**(label_name : String)](#start_dialogue_from_labellabel_name--string)
 
 ## Vars
 ### raku_script
