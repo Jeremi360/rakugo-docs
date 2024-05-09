@@ -8,6 +8,27 @@ You can use with **RakuScriptDialogue** node or using:
 Rakugo.parse_script("path/to/raku_script.rk")
 ```
 
+## Label
+
+=== "RakuScript"
+
+    ```renpy
+    [label_name]:
+        # here some code with indent
+    ```
+
+It allows to split script to smaller parts between
+you can jump between those parts with [`jump`](#jump) or using [`menu`](#menu).
+
+### Label Example
+
+=== "RakuScript"
+
+    ```renpy
+    emily_date_ask:
+        emily "Will you go on date with me?"
+    ```
+
 ## Character
 
 ```character [char_tag] [char_name]```
