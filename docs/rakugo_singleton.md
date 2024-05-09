@@ -391,20 +391,20 @@ Use it when [is_waiting_menu_return] return `true`, to continue script reading p
 
 `index` is the index of choosed choice in the choices array given by [sg_menu].
 
-[Say]: rakuscript.md##say
-[do_step]: ##do_step
-[Ask]: rakuscript.md##ask
-[ask_return]: rakuscript.md##ask_return
-[Menu]: rakuscript.md##menu
-[menu_return]: rakuscript.md##menu_return
-[parse_script]: ##parse_script
-[parse_and_execute_script]: ##parse_and_execute_script
-[execute_script]: ##execute_script
-[is_waiting_step]: ##is_waiting_step
-[sg_custom_regex]: ##sg_custom_regex
-[sg_ask]: ##sg_ask
-[is_waiting_ask_return]: ##is_waiting_ask_return
-[sg_menu]: ##sg_menu
-[is_waiting_menu_return]: ##is_waiting_menu_return
-[add_custom_regex]: ##add_custom_regex
-[resume_loaded_script]: ##resume_loaded_script
+[Say]: rakuscript.md#say
+[do_step]: #do_step
+[Ask]: rakuscript.md#ask
+[ask_return]: rakuscript.md#ask_return
+[Menu]: rakuscript.md#menu
+[menu_return]: rakuscript.md#menu_return
+[parse_script]: #parse_script
+[parse_and_execute_script]: #parse_and_execute_script
+[execute_script]: #execute_script
+[is_waiting_step]: #is_waiting_step
+[sg_custom_regex]: #sg_custom_regex
+[sg_ask]: #sg_ask
+[is_waiting_ask_return]: #is_waiting_ask_return
+[sg_menu]: #sg_menu
+[is_waiting_menu_return]: #is_waiting_menu_return
+[add_custom_regex]: #add_custom_regex
+[resume_loaded_script]: #resume_loaded_script
